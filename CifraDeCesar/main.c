@@ -1,7 +1,7 @@
-#include <stdio.h>  // Includes standard input/output library
+#include <stdio.h>
 #include <string.h>
 
-// Function declaration: takes a string and a shift value
+// Declarar funções para não resultar em erro.
 void shiftAlphabet  (char shiftedAlphabet[], int shift);
 void applyAP        (char shiftedAlphabet[], char newAlphabet[], int progress);
 void encryptText    (char cipher[], char newAlphabet[], int shift);
