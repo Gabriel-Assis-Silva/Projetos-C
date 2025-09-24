@@ -7,14 +7,16 @@ int main()
         {2, 2, 5, 6},
         {2, 3, 1, 2},
         {1, 0, 4, 1},
-        {3, 5, 2, 0}};
+        {3, 5, 2, 0}
+    };
 
     // Declarando e preenchendo a Matriz B (também 4x4)
     int MatrizB[4][4] = {
         {2, 2, 8, 9},
         {2, 8, 2, 2},
         {1, 2, 3, 4},
-        {0, 1, 2, 3}};
+        {0, 1, 2, 3}
+    };
 
     // Criando uma nova matriz para guardar o resultado da soma (também 4x4)
     int MatrizC[4][4];
@@ -31,9 +33,10 @@ int main()
             printf("%d \t", MatrizC[line][column]);
         }
 
-        // Após terminar uma linha, pula para a próxima linha na tela
+        // Após terminar uma linha, pula para a próxima linha na tela para imprimir um resultado mais organizado.
         printf("\n");
     }
 
     return 0; // Indica que o programa terminou com sucesso
 }
+
