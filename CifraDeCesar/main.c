@@ -40,6 +40,13 @@ void applyAP(char shiftedAlphabet[], char newAlphabet[], int progress) {
 	int used[26] = {0}; // Marca quais posições já foram usadas na PA
 	int index = 0;
 
+	if (progress <= 0) {
+        progress = 1;
+	}
+	if (progress > 26) {
+		printf("Valor PA muito alta! Isso resulta em 0 modificacoes no alfabeto! \n"); // E aqui se a pessoa colocar acima de 26, é como se fosse colocar 1 na PA, então avisamos o usuário sobre isso.
+	}
+
 	// 1ª Parte: adiciona letras da PA ao novo alfabeto
 	for (int i = progress - 1; i < 26; i += progress) {
 		newAlphabet[index++] = shiftedAlphabet[i];
